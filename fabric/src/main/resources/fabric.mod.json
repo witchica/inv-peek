@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "homepage": "${mod_website}",
+    "sources": "${mod_sources}"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "${logo_file}",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.witchica.mct.fabric.MoCraftingTablesFabric"
+    ],
+    "client": [
+      "com.witchica.mct.fabric.client.MoCraftingTablesClientFabric"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": "${mod_fabric_loader_minimum}",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  }
+}
