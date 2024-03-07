@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:mangrove_planks"
+    },
+    "D": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "pattern": [
+    "DP",
+    "PP"
+  ],
+  "result": {
+    "item": "mo_crafting_tables:mangrove_crafting_table"
+  },
+  "show_notification": true
+}

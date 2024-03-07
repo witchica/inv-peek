@@ -1,0 +1,9 @@
+{
+  "parent": "mo_crafting_tables:block/crafting_bench",
+  "textures": {
+    "base_block": "minecraft:block/stripped_oak_log",
+    "crafting_table_side": "mo_crafting_tables:block/oak_crafting_table_side",
+    "crafting_table_front": "mo_crafting_tables:block/oak_crafting_table_front",
+    "crafting_table_top": "mo_crafting_tables:block/oak_crafting_table_top"
+  }
+}

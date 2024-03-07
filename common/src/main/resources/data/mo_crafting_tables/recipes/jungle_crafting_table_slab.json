@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:jungle_planks"
+    },
+    "D": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "pattern": [
+    "PDP"
+  ],
+  "result": {
+    "item": "mo_crafting_tables:jungle_crafting_table_slab"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "mo_crafting_tables:block/half_crafting_table_top",
+  "textures": {
+    "base_block": "minecraft:block/stripped_warped_stem",
+    "crafting_table_side": "mo_crafting_tables:block/warped_half_crafting_table_side",
+    "crafting_table_front": "mo_crafting_tables:block/warped_half_crafting_table_front",
+    "crafting_table_top": "mo_crafting_tables:block/warped_crafting_table_top"
+  }
+}

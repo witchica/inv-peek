@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:acacia_planks"
+    },
+    "D": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "pattern": [
+    "PDP"
+  ],
+  "result": {
+    "item": "mo_crafting_tables:acacia_crafting_table_slab"
+  },
+  "show_notification": true
+}

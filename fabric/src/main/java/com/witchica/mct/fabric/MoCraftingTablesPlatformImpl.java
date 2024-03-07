@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import org.jetbrains.annotations.Nullable;
 
-public class MoCraftingTablesImpl {
+public class MoCraftingTablesPlatformImpl {
     public static void openMenu(Player player, BlockPos pos) {
         player.openMenu(new ExtendedScreenHandlerFactory() {
             @Override
@@ -22,7 +22,7 @@ public class MoCraftingTablesImpl {
 
             @Override
             public Component getDisplayName() {
-                return Component.empty();
+                return Component.translatable("container.mo_crafting_tables.crafting_bench");
             }
 
             @Nullable

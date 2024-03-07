@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "D": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "pattern": [
+    "PDP"
+  ],
+  "result": {
+    "item": "mo_crafting_tables:bamboo_crafting_table_slab"
+  },
+  "show_notification": true
+}

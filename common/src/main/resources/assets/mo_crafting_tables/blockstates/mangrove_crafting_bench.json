@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mo_crafting_tables:block/mangrove_crafting_bench"
+    }
+  }
+}

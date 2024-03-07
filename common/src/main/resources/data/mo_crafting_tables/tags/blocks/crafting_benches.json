@@ -1,0 +1,15 @@
+{
+  "values": [
+    "mo_crafting_tables:spruce_crafting_bench",
+    "mo_crafting_tables:oak_crafting_bench",
+    "mo_crafting_tables:crimson_crafting_bench",
+    "mo_crafting_tables:birch_crafting_bench",
+    "mo_crafting_tables:dark_oak_crafting_bench",
+    "mo_crafting_tables:bamboo_crafting_bench",
+    "mo_crafting_tables:acacia_crafting_bench",
+    "mo_crafting_tables:mangrove_crafting_bench",
+    "mo_crafting_tables:warped_crafting_bench",
+    "mo_crafting_tables:cherry_crafting_bench",
+    "mo_crafting_tables:jungle_crafting_bench"
+  ]
+}

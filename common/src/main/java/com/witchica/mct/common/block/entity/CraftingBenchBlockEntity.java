@@ -17,7 +17,7 @@ public class CraftingBenchBlockEntity extends BlockEntity {
     private final SimpleResultContainer resultContainer;
 
     public CraftingBenchBlockEntity(BlockPos pos, BlockState blockState) {
-        super(MoCraftingTables.GENERIC_BLOCK_ENTITY_TYPE, pos, blockState);
+        super(MoCraftingTables.BENCH_BLOCK_ENTITY_TYPE, pos, blockState);
         this.craftingContainer = new SimpleCraftingContainer();
         this.resultContainer = new SimpleResultContainer();
     }

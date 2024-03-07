@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "top=true": {
+      "model": "mo_crafting_tables:block/crimson_half_crafting_table_top"
+    },
+    "top=false": {
+      "model": "mo_crafting_tables:block/crimson_half_crafting_table_bottom"
+    }
+  }
+}

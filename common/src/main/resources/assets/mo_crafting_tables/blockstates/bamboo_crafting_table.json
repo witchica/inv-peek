@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mo_crafting_tables:block/bamboo_crafting_table"
+    }
+  }
+}
