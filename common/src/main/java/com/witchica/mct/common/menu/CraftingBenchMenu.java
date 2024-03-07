@@ -52,7 +52,6 @@ public class CraftingBenchMenu extends RecipeBookMenu<CraftingContainer> {
         this.player = playerInventory.player;
         this.addSlot(new ResultSlot(playerInventory.player, this.craftSlots, this.resultSlots, 0, 124, 35));
 
-        System.err.println("CRAFTING SLOTS");
         int i;
         int j;
         for(i = 0; i < 3; ++i) {
@@ -60,7 +59,6 @@ public class CraftingBenchMenu extends RecipeBookMenu<CraftingContainer> {
                 this.addSlot(new CraftingSlot(this, this.craftSlots, j + i * 3, 30 + j * 18, 17 + i * 18));
             }
         }
-        System.err.println("PLAYER SLOTS");
 
         for(i = 0; i < 3; ++i) {
             for(j = 0; j < 9; ++j) {
