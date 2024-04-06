@@ -44,13 +44,13 @@ public class MoCraftingTablesFabric implements ModInitializer {
         Registry.register(BuiltInRegistries.MENU, MoCraftingTables.MO_CRAFTING_TABLES_MENU_RESOURCE_LOCATION, MoCraftingTables.MO_CRAFTING_TABLES_MENU_TYPE);
 
         for(int i = 0; i < MoCraftingTables.WOOD_TYPES.length; i++) {
-            MoCraftingTables.CRAFTING_TABLE_BLOCKS[i] = Registry.register(BuiltInRegistries.BLOCK, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_table"), new MctCraftingTableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRAFTING_TABLE)));
+            MoCraftingTables.CRAFTING_TABLE_BLOCKS[i] = Registry.register(BuiltInRegistries.BLOCK, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_table"), new MctCraftingTableBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
             Registry.register(BuiltInRegistries.ITEM, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_table"), new BlockItem(MoCraftingTables.CRAFTING_TABLE_BLOCKS[i], new Item.Properties()));
 
-            MoCraftingTables.CRAFTING_BENCH_BLOCKS[i] = Registry.register(BuiltInRegistries.BLOCK, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_bench"), new CraftingBenchBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRAFTING_TABLE).noOcclusion()));
+            MoCraftingTables.CRAFTING_BENCH_BLOCKS[i] = Registry.register(BuiltInRegistries.BLOCK, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_bench"), new CraftingBenchBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE).noOcclusion()));
             Registry.register(BuiltInRegistries.ITEM, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_bench"), new BlockItem(MoCraftingTables.CRAFTING_BENCH_BLOCKS[i], new Item.Properties()));
 
-            MoCraftingTables.CRAFTING_TABLE_SLAB_BLOCKS[i] = Registry.register(BuiltInRegistries.BLOCK, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_table_slab"), new CraftingTableSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRAFTING_TABLE).noOcclusion()));
+            MoCraftingTables.CRAFTING_TABLE_SLAB_BLOCKS[i] = Registry.register(BuiltInRegistries.BLOCK, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_table_slab"), new CraftingTableSlabBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE).noOcclusion()));
             Registry.register(BuiltInRegistries.ITEM, MoCraftingTables.makeResourceLocation(MoCraftingTables.WOOD_TYPES[i] + "_crafting_table_slab"), new BlockItem(MoCraftingTables.CRAFTING_TABLE_SLAB_BLOCKS[i], new Item.Properties()));
         }
 

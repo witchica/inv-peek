@@ -41,7 +41,7 @@ public class MoCraftingTables {
         return new ResourceLocation(MOD_ID, name);
     }
 
-    public static final Supplier<Block> PERSISTENT_CRAFTING_TABLE_BLOCK_SUPPLIER = () -> new CraftingBenchBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRAFTING_TABLE));
+    public static final Supplier<Block> PERSISTENT_CRAFTING_TABLE_BLOCK_SUPPLIER = () -> new CraftingBenchBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE));
 
     /*
         Resource Locations

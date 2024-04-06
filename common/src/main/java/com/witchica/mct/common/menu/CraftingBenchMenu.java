@@ -16,7 +16,6 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.Recipe;
-import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 
@@ -76,11 +75,9 @@ public class CraftingBenchMenu extends RecipeBookMenu<CraftingContainer> {
         if (!level.isClientSide) {
             ServerPlayer serverPlayer = (ServerPlayer)player;
             ItemStack itemStack = ItemStack.EMPTY;
-            Optional<RecipeHolder<CraftingRecipe>> optional = level.getServer().getRecipeManager().getRecipeFor(RecipeType.CRAFTING, container, level);
-            if (optional.isPresent()) {
-                RecipeHolder<CraftingRecipe> recipeHolder = (RecipeHolder)optional.get();
-                CraftingRecipe craftingRecipe = (CraftingRecipe)recipeHolder.value();
-                if (result.setRecipeUsed(level, serverPlayer, recipeHolder)) {
+            Optional<CraftingRecipe> optional = level.getServer().getRecipeManager().getRecipeFor(RecipeType.CRAFTING, container, level); if (optional.isPresent()) {
+                CraftingRecipe craftingRecipe = (CraftingRecipe)optional.get();
+                if (result.setRecipeUsed(level, serverPlayer, craftingRecipe)) {
                     ItemStack itemStack2 = craftingRecipe.assemble(container, level.registryAccess());
                     if (itemStack2.isItemEnabled(level.enabledFeatures())) {
                         itemStack = itemStack2;
@@ -108,8 +105,9 @@ public class CraftingBenchMenu extends RecipeBookMenu<CraftingContainer> {
         this.resultSlots.clearContent();
     }
 
-    public boolean recipeMatches(RecipeHolder<? extends Recipe<CraftingContainer>> recipe) {
-        return recipe.value().matches(this.craftSlots, this.player.level());
+    @Override
+    public boolean recipeMatches(Recipe<? super CraftingContainer> recipe) {
+        return recipe.matches(this.craftSlots, this.player.level());
     }
 
     public void removed(Player player) {
